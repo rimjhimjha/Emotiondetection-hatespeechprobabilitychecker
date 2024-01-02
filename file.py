@@ -16,7 +16,7 @@ def hatespeech_detection(text):
   result = hatespeech.predict(text)
   return next(iter(result.probas.items()))
 
-text="Overwhelmed with joy, she embraced the unexpected success, tears of happiness streaming down her face, creating a cherished moment."
+text=str(input("ENTER A SENTENCE IN STRING FORMAT :"))
 emo= emotion_detection(text)
 hate= hatespeech_detection(text)
 
